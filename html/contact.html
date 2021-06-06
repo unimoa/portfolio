@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact|げんきサプリ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
+</head>
+<body id="contact">
+  <!-- header始まり -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="../img/genkilogo.png" alt="genki">
+      </a>
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+              <div class="menu">
+                <label for="Panel1">Lineup</label>
+                <input type="checkbox" id="Panel1" class="on-off"/>
+                  <ul>
+                    <li><label for="Panel2"><a href="Lineup.html">LineupTOP</a></label>
+                      <input type="checkbox" id="Panel2" class="on-off"/>
+                    <li><label for="Panel3">Supplements Lineup</label>
+                      <input type="checkbox" id="Panel3" class="on-off"/>
+                      <ul>
+                        <li><a href="Lineup1.html#health">健康</a></li>
+                        <li><a href="Lineup1.html#beauty">美容</a></li>
+                        <li><a href="Lineup1.html#diet">ダイエット</a></li>
+                      </ul></li>
+                    <li><label for="Panel4">Study about Supplement</label>
+                      <input type="checkbox" id="Panel4" class="on-off"/>
+                      <ul>
+                        <li><a href="Lineup2.html#movie1">Movie1</a></li>
+                        <li><a href="Lineup2.html#movie2">Movie2</a></li>
+                      </ul></li>
+                  </ul>
+                <label for="Panel10"><a href="About.html">About</a></label>
+                <input type="checkbox" id="Panel10" class="on-off"/>
+                <label for="Panel20"><a href="Contact.html">Contact</a></label>
+                <input type="checkbox" id="Panel20" class="on-off"/>
+              </div>
+          </div>
+      </div>
+    </div>
+    <class class="right-nav">
+      <ul class="gloval-nav">
+        <li><a href="Lineup.html">Lineup</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+      </class>
+    </div>
+  </header>
+  <!-- header終わり -->
+  <!-- wrap始まり -->
+  <div id="wrap">
+    <div class="content">
+      <div class="main-center">
+        <h1>Contact</h1>
+        <p>げんきサプリ店舗へのアクセス方法、商品や各種お問い合わせに関するページです。お気軽にお問い合わせください。</p>
+        <section class="access-clearfix">
+          <h2 class="icon">Access</h2>
+        <div class="access-map">
+          <table>
+            <tr>
+              <th>所在地住所</th>
+              <td>〒123-4567<br>MiyazakiCity</td>
+            </tr>
+            <tr>
+              <th>電話番号</th>
+              <td>012-3456-7890</td>
+            </tr>
+            <tr>
+              <th>電車でのアクセス</th>
+              <td>〇〇線「げんき駅」より徒歩5分</td>
+            </tr>
+            <tr>
+              <th>お車でのアクセス</th>
+              <td>△△I･Cより国道100号線経由で30分</td>
+            </tr>
+          </table>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6888.217735234905!2d131.46221437632568!3d31.802058186305395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1622951463598!5m2!1sja!2sjp" width="460" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        </section>
+        <section>
+          <h2 class="icon">Contact form</h2>
+          <div class="form">
+            <form>
+              <dl>
+                <dt><span class="required">お名前</span></dt>
+                <dd><input type="text" name="name" class="name" required></dd>
+                <dt><span class="required">メールアドレス</span></dt>
+                <dd><input type="email" name="email" class="email" required></dd>
+                <dt>お電話番号</dt>
+                <dd><input type="tel" name="tel" class="tel"></dd>
+                <dt>お問い合わせ項目</dt>
+                <dd>
+                  <select name="type" class="type">
+                    <option>---</option>
+                    <option value="商品について">商品について</option>
+                    <option value="お支払い方法について">お支払い方法について</option>
+                    <option value="発送方法・送料について">発送方法・送料について</option>
+                    <option value="その他お問い合わせ">その他お問い合わせ</option>
+                  </select>
+                </dd>
+                <dt>ご希望のご連絡方法</dt>
+                <dd>
+                  <input type="radio" name="contact" value="Eメール">Eメール
+                  <input type="radio" name="contact" value="お電話">お電話
+                </dd>
+                <dt>お問い合わせ内容詳細</dt>
+                <dd>
+                  <textarea name="message" class="message"></textarea>
+                </dd>
+              </dl>
+              <button type="submit" class="btn">送信</button>
+              <div class="attention">
+                <p>※「<span class="required"></span>」とついている項目は必須項目です。<br>※メッセージ送信後、48営業時間以内に担当者よりご連絡いたします。</p>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- wrap終わり -->
+  <!-- footer始まり -->
+  <footer>
+<ul class="follow-me">
+  <li><a href="https://twitter.com"></a></li>
+  <li><a href="https://github.com"></a></li>
+  <li><a href="https://www.facebook.com"></a></li>
+  <li><a href="https://www.youtube.com"></a></li>
+  <li><a href="https://www.instagram.com/"></a></li>
+</ul>
+    <a href="#" id="page-top">TOP
+      <link rel="preconnect" href="https://fonts.gstatic.com">	
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    </a>
+    <small>(C)2021 Genki-Supplements.</small>
+  </footer>
+  <!-- footer終わり -->
+</body>
+</html>
