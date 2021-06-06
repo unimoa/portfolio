@@ -363,7 +363,7 @@ padding-left: 8px;
 } */
 /*ラベルホバー時*/
 .modal-button:hover {
-  /* color: deeppink; */
+  color: deeppink;
   transition: .6s;
   background-position: 0 0;
 }
@@ -458,6 +458,10 @@ padding-left: 8px;
   color: #2b2e38 !important
 }
 
+.fa-times-circle:before {
+  display: none;
+}
+
 @media screen and (min-width:768px) {
   #about .content{
   padding-left: 70px;
@@ -514,7 +518,8 @@ h2 {
   }
 }
 
-.profile-image {
+section .profile-image {
+  width: 100%;
   height: 40%;
 }
 
@@ -698,10 +703,37 @@ table {
   text-align: left;
 }
 
+.googlemap {
+  height: 220px;
+  width: 100%;
+}
+
 @media screen and (min-width:768px){
   .access-map {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.map-container{
+  width: 50%;
+}
+
+.map-container > tbody{
+  width: 100%;
+}
+
+.map-container > tr{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width:768px){
+    .map-container > tr {
+    flex-direction: row;
+  }
+    .map-container tr th {
+    width: 40%;
   }
 }
 
@@ -716,6 +748,12 @@ table {
   width: 165px;
   padding: 10px 0;
   font-weight: bold;
+}
+
+@media screen and (min-width:768px){	
+  #contact .form dl dt {	
+  padding: 0;	
+  }	
 }
 
 #contact .form dl dd{
